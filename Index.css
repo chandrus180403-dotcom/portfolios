@@ -1,0 +1,262 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popins, sans-serif";
+}
+
+body {
+    background-color: darkblue;
+    color: white;
+}
+
+.border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20Px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transform: .3s;
+
+}
+
+.navbar a:hover {
+    color: skyblue;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url('https://in.pinterest.com/pin/366128644728897007/') no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10px 0;
+}
+
+.home-content {
+    max-width: 600px;
+
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+*.home-contenth1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+
+/* --- RESET & BASE STYLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* --- HEADER --- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    color: #00ffff;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #fff;
+}
+
+/* --- NAVBAR --- */
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 35px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #00ffff;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ffff;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* --- HOME SECTION --- */
+.home-content {
+    max-width: 700px;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url('https://in.pinterest.com/pin/366128644728897007/') no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10px 0;
+}
+
+.home-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.home-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #00ffff;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* --- SOCIAL ICONS --- */
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid skyblue;
+    border-radius: 50%;
+    font-size: 20px;
+    color: skyblue;
+    text-decoration: none;
+
+    margin: 30px 15px 30px 0;
+
+
+}
+
+.home-sci a {
+    color: #00abf0;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.home-sci a:hover {
+    color: #ffb400;
+    transform: scale(1.2);
+}
+
+
+/* --- BUTTON --- */
+.btn-box {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #00ffff;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-box:hover {
+    background: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    transform: scale(1.05);
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 40px;
+    }
+
+    .navbar a {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .home-content h3 {
+        font-size: 22px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+}
